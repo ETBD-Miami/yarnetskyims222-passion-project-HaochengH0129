@@ -97,3 +97,30 @@ h2{
 	}
 	
 }
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+  }
+  
+  nav ul li {
+	flex:1;
+	list-style-type: none;
+  }
+  
+  nav ul li a {
+	display: block;
+	padding: 0.75em;
+	margin: 0.25em;  
+	background-color:cornflowerblue;
+	color: white;  
+	text-align: center;
+	text-decoration:dotted;  
+	border-radius: 10px;
+  }
+  
+  nav ul li a:hover {
+	background-color:cornflowerblue;
+	box-shadow: inset 3px 3px 10px #300;  
+  }

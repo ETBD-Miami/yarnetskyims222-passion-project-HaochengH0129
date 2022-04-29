@@ -99,8 +99,8 @@ h2{
 }
 
 nav ul {
-	display: flex;
-	flex-direction: row;
+	display:flex;
+	flex-direction:column;
 	padding: 0px;
   }
   
@@ -110,7 +110,7 @@ nav ul {
   }
   
   nav ul li a {
-	display: block;
+	display:block;
 	padding: 0.75em;
 	margin: 0.25em;  
 	background-color:cornflowerblue;
@@ -129,7 +129,7 @@ nav ul {
   * {
     box-sizing: border-box; 
   }
-  body {
+  body-2 {
     display: flex;
     min-height: 100vh;
     flex-direction: row;

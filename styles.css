@@ -125,7 +125,7 @@ nav ul {
 	box-shadow: inset 3px 3px 10px #300;  
   }
 
-  <style>
+  
   * {
     box-sizing: border-box; 
   }
@@ -159,4 +159,7 @@ nav ul {
   header, footer, article, nav {
     padding: 1em;
   }
-</style>
+
+html {
+	background-image: url("images/image.jpeg");
+}

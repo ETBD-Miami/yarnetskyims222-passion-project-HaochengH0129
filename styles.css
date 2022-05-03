@@ -113,7 +113,7 @@ nav ul {
 	display:block;
 	padding: 0.75em;
 	margin: 0.25em;  
-	background-color:cornflowerblue;
+	background-color:#300;
 	color: white;  
 	text-align: center;
 	text-decoration:dotted;  
@@ -121,8 +121,19 @@ nav ul {
   }
   
   nav ul li a:hover {
-	background-color:cornflowerblue;
+	background-color:maroon;
 	box-shadow: inset 3px 3px 10px #300;  
+  }
+
+  .bookmark {
+	  display: flex;
+	  flex-direction: column;
+	  text-align:left;
+	  text-shadow: #300;
+	  background-color: maroon;
+
+
+
   }
 
   
@@ -134,6 +145,7 @@ nav ul {
     min-height: 100vh;
     flex-direction: row;
     margin: 0;
+	color: white;
   }
   .col-1 {
     background: #D7E8D4;
@@ -153,7 +165,8 @@ nav ul {
     min-height: 60vh;
   }
   header, footer {
-    background: red;
+    background: maroon;
+	color:white;
     height: 20vh;
   }
   header, footer, article, nav {
@@ -162,4 +175,8 @@ nav ul {
 
 html {
 	background-image: url("images/image.jpeg");
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }

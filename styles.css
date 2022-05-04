@@ -180,3 +180,9 @@ html {
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+img {
+	width:50%;
+	height:30%;
+
+}

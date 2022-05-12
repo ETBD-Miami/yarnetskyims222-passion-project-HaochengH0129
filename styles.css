@@ -1,1 +1,386 @@
+a {
+	text-decoration: none;
+	color: white;
+}
+
+h2 {
+	font-family: 'Lobster', cursive;
+	font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	font-family: 'Roboto Slab', serif;
+}
+
+#scene {
+	background-color: #304056;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.layer {
+	pointer-events: none;
+}
+
+.col {
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 12.5%;
+	pointer-events: all;
+	overflow: initial;
+	margin: 0 0 30px;
+}
+
+.layer.main {
+	width: 150%;
+	position: absolute;
+	z-index: 1;
+	padding: 20px;
+}
+
+.col a {
+	display: block;
+	margin: 15px;
+	overflow: hidden;
+	box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.37);
+}
+
+.col a .hover {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	bottom: -15px;
+	left: 15px;
+	z-index: 1;
+	color: white;
+	background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.47) 0%, rgba(0, 0, 0, 0) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.47) 0%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(45deg, rgba(0, 0, 0, 0.47) 0%, rgba(0, 0, 0, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#78000000', endColorstr='#00000000', GradientType=1);
+}
+
+.col a .hover:after {
+	content: '';
+	position: absolut;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgb(235, 116, 152);
+	opacity: 0;
+	transition: 0.35s ease;
+}
+
+.col a .hover:hover:after {
+	opacity: 0.85;
+	transition: 0.35s ease;
+}
+
+.align-bottom {
+	position: absolute;
+	width: 100%;
+	bottom: 0%;
+	z-index: 2;
+	padding: 15px 20px;
+}
+
+.bg-img {
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+@media only screen and (max-width:1200px) {
+	.layer .col {
+		width: 16.666%;
+	}
+
+}
+
+@media only screen and (max-width:650px) {
+	.layer .col {
+		width: 25%;
+	}
+
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+}
+
+nav ul li {
+	flex: 1;
+	list-style-type: none;
+}
+
+nav ul li a {
+	display: block;
+	padding: 0.75em;
+	margin: 0.25em;
+	background-color: #300;
+	color: white;
+	text-align: center;
+	text-decoration: dotted;
+	border-radius: 10px;
+}
+
+nav ul li a:hover {
+	background-color: maroon;
+	box-shadow: inset 3px 3px 10px #300;
+}
+
+.bookmark {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	text-shadow: #300;
+	background-color: maroon;
+
+
+
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+body-2 {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: row;
+	margin: 0;
+	color: white;
+}
+
+.col-1 {
+	background: #D7E8D4;
+	flex: 1;
+}
+
+.col-2 {
+	display: flex;
+	flex-direction: column;
+	flex: 5;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+}
+
+.content>article {
+	flex: 4;
+	min-height: 60vh;
+}
+
+header,
+footer {
+	background: maroon;
+	color: white;
+	height: 20vh;
+}
+
+header,
+footer,
+article,
+nav {
+	padding: 1em;
+}
+
+html {
+	background-image: url("images/image.jpeg");
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+img {
+	width: 50%;
+	height: 30%;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Six columns side by side */
+.column {
+	float: left;
+	width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+	opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+	opacity: 1;
+}
+
+/* Navbar container */
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: #300;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+	display: block;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: black;
+	background-color: #300;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	/* Important for vertical align on mobile phones */
+	margin: 0;
+	/* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+	background-color: maroon;
+	box-shadow: inset 3px 3px 10px #300;
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: center;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+
+
+	display: flex;
+
+	padding: 0.75em;
+	margin: 0.25em;
+	background-color: #300;
+	color: white;
+	text-align: center;
+	text-decoration: dotted;
+	border-radius: 10px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
 
